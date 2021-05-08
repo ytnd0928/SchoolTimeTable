@@ -5,25 +5,28 @@ export const Form =(/*{onAddSub}*/)=> {
   const [teacher, setTeacher] = useState('')
   const submitForm = (e) => {
       e.preventDefault();
+
       //onAddSub(subject);
       window.confirm ( `
       以下の内容で登録しますか？　　　　　　　　　　
 
 　　　  科目名 : ${subject}
             教員名　: ${teacher}`)
+
+            
 　　}
   return (
      <div>
      <h3>登録フォーム</h3>
      <form onSubmit = {submitForm} >
-     <p>科目名
+     <p>科目名 :
      <input
      type="text"
      value={subject}
      onChange={(e) => setSubject(e.target.value)}
      placeholder="科目名" />
      </p>
-     <p>教員名
+     <p>教員名 :
      <input
      type="text"
      value={teacher}
@@ -32,8 +35,7 @@ export const Form =(/*{onAddSub}*/)=> {
      </p>
      <button>登録</button>
      </form>
-
-     </div>
+   </div>
    )
   }
 

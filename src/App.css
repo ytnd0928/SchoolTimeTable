@@ -12,3 +12,23 @@
   color : dimgray;
   font-weight: bold;
 }
+
+&:hover {
+    background: red;
+  }
+
+
+  .slot {
+    border: 1px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  &.editing {
+    background: blue;
+  }
+
+  .App {
+    text-align: center;
+
+  }
